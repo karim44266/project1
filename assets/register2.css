@@ -1,0 +1,87 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 360px;
+    background: rgba(0,0,0,0.7);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.container h2 {
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff;
+    margin-bottom: 20px;
+}
+
+.container input {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #0ff;
+    border-radius: 4px;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    transition: 0.3s;
+}
+
+.container input::placeholder {
+    color: #7f8c8d;
+}
+
+.container input:focus {
+    box-shadow: 0 0 10px #0ff;
+    border-bottom-color: #0ff;
+}
+
+.container button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(45deg, #00f0ff, #00ff8c);
+    color: #1c1c1c;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+.container button:hover {
+    box-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+    transform: translateY(-2px);
+}
+
+.container .message {
+    margin-top: 15px;
+    color: #b3b3b3;
+}
+
+.container a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #0ff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.container a:hover {
+    text-shadow: 0 0 10px #0ff;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px);}
+    to { opacity: 1; transform: translateY(0);}
+}
