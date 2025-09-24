@@ -1727,5 +1727,3 @@ console.log('   • Escape: Fermer les panneaux');
 </script>
 </body>
 </html>  
-</body>
-</html>  
